@@ -1,0 +1,9 @@
+.empty {
+  color: #888;
+  font-style: italic;
+}
+
+.date {
+  color: #666;
+  font-size: 0.9em;
+}

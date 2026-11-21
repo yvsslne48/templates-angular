@@ -1,0 +1,13 @@
+<h2>Liste : </h2>
+<h3>ajout :</h3> <input [value]="new()" (input)="new.set($any($event.target).value)" (keyup.enter)="addArticle()" />
+
+<p> articles restants : {{ availableArticles().length }} </p>
+@if (emptyStock()) {
+  <p> plus d'articles disponibles </p>
+}
+{{ articles().length }} articles au total
+<ul>
+  @for (article of articles(); track article.id) {
+    <li> {{ article.title }} </li>
+  }
+</ul>
