@@ -1,0 +1,38 @@
+:host {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header header'
+    'aside  main'
+    'footer footer';
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  grid-area: header;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media (max-width: 600px) {
+  :host {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'aside'
+      'main'
+      'footer';
+  }
+}

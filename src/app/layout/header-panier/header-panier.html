@@ -1,0 +1,8 @@
+<h1>Ma Boutique</h1>
+
+<div class="panier">
+  <span>
+    panier : {{ panierService.nombreArticles() }} articles - {{ panierService.total() | currency: 'MAD' }}
+  </span>
+  <button (click)="panierService.vider()">Vider le panier</button>
+</div>

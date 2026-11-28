@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 24px;
+  background: #6c3aa8;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.panier {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+}
+
+button {
+  background: white;
+  color: #6c3aa8;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+}

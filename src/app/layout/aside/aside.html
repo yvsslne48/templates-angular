@@ -1,0 +1,15 @@
+<nav>
+  <a routerLink="/">Catalogue</a>
+  <a routerLink="/anciens-tps">Anciens TPs</a>
+</nav>
+
+<h3>Nombre par produit</h3>
+@if (panierService.nombreArticles() === 0) {
+  <p class="vide">Panier vide</p>
+} @else {
+  <ul>
+    @for (ligne of panierService.compterProduits() | keyvalue; track ligne.key) {
+      <li>{{ ligne.key }} {{ ligne.value }}</li>
+    }
+  </ul>
+}

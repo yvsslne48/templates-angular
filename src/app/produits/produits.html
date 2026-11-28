@@ -1,0 +1,7 @@
+@for (produit of produits; track produit.id) {
+  <div class="carte">
+    <h3>{{ produit.nom }}</h3>
+    <p class="prix">{{ produit.prix }} DH</p>
+    <button (click)="panierService.ajouter(produit)">Ajouter au panier</button>
+  </div>
+}

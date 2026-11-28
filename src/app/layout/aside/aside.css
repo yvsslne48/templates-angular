@@ -1,0 +1,32 @@
+:host {
+  display: block;
+  padding: 16px;
+  background: #f3ecfb;
+  border-right: 1px solid #ddd;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+a {
+  color: #6c3aa8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 15px;
+  margin-top: 24px;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+.vide {
+  color: #888;
+  font-style: italic;
+}
